@@ -1,0 +1,297 @@
+.DVBE {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background: rgb(70, 87, 170);
+  background: linear-gradient(
+    101deg,
+    rgba(70, 87, 170, 1) 0%,
+    rgba(36, 50, 116, 1) 11%,
+    rgba(0, 11, 44, 1) 40%
+  );
+
+  .DVBE__logo {
+    transform: translate(-20%, 10%);
+    width: 700px;
+    height: 700px;
+  }
+
+  .DVBE-filter {
+    width: 100%;
+    height: 100%;
+    background: #1e20539c;
+    position: absolute;
+    display: none;
+  }
+
+  .DVBE__info {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+
+    .DVBE__contLogo-urban {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 400px;
+
+      .DVBE__logo-urban {
+        width: 300px;
+      }
+
+      .DVBE__logo-dvbe {
+        width: 80px;
+      }
+    }
+
+    h2 {
+      font-family: $font-family-0;
+      color: white;
+      z-index: 0;
+      text-align: start;
+      width: 95%;
+
+      span {
+        font-weight: 200;
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+// Media Querys // ---------------------
+@media screen and(max-width: 1420px) {
+  .DVBE {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .DVBE__logo {
+      transform: translate(-20%, 10%);
+      width: 700px;
+      height: 700px;
+    }
+
+    .DVBE__info {
+      width: 50%;
+      height: 80%;
+      display: flex;
+
+      .DVBE__contLogo-urban {
+        width: 400px;
+
+        .DVBE__logo-urban {
+          width: 300px;
+        }
+        .DVBE__logo-dvbe {
+          width: 80px;
+        }
+      }
+
+      h2 {
+        z-index: 0;
+        font-size: $L;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1200px) {
+  .DVBE {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .DVBE__logo {
+      transform: translate(-20%, 10%);
+      width: 700px;
+      height: 700px;
+    }
+
+    .DVBE-filter {
+      display: block;
+    }
+
+    .DVBE__info {
+      width: 70%;
+      height: 80%;
+      display: flex;
+      position: absolute;
+      right: 5px;
+
+      .DVBE__contLogo-urban {
+        width: 380px;
+
+        .DVBE__logo-urban {
+          width: 300px;
+        }
+        .DVBE__logo-dvbe {
+          width: 80px;
+        }
+      }
+
+      h2 {
+        z-index: 0;
+        font-size: $L;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 925px) {
+  .DVBE {
+    width: 100%;
+    height: 400px;
+
+    .DVBE__logo {
+      transform: translate(-13%, 10%);
+      width: 500px;
+      height: 500px;
+    }
+
+    .DVBE-filter {
+      display: block;
+    }
+
+    .DVBE__info {
+      width: 70%;
+      height: 80%;
+      display: flex;
+      position: absolute;
+      right: 5px;
+
+      .DVBE__contLogo-urban {
+        width: 315px;
+        .DVBE__logo-urban {
+          width: 250px;
+        }
+        .DVBE__logo-dvbe {
+          width: 70px;
+        }
+      }
+
+      h2 {
+        z-index: 0;
+        font-size: $M;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 725px) {
+  .DVBE {
+    width: 100%;
+    height: 400px;
+
+    .DVBE__logo {
+      transform: translate(-13%, 10%);
+      width: 500px;
+      height: 500px;
+    }
+
+    .DVBE-filter {
+      display: block;
+    }
+
+    .DVBE__info {
+      width: 70%;
+      height: 80%;
+      display: flex;
+      position: absolute;
+      right: 5px;
+
+      .DVBE__contLogo-urban {
+        .DVBE__logo-urban {
+          width: 250px;
+        }
+        .DVBE__logo-dvbe {
+          
+        }
+      }
+
+      h2 {
+        z-index: 0;
+        font-size: $S;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 525px) {
+  .DVBE {
+    width: 100%;
+    height: 400px;
+
+    .DVBE__logo {
+      transform: translate(-13%, 10%);
+      width: 500px;
+      height: 500px;
+      display: none;
+    }
+
+    .DVBE-filter {
+      display: none;
+      
+    }
+
+    .DVBE__info {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      align-self: center;
+      justify-self: center;
+      top: 30px;
+      right: 0px;
+      left: 0px;
+      position: absolute;
+
+      margin: 0px;
+
+      .DVBE__contLogo-urban {
+        width: 350px;
+        .DVBE__logo-urban {
+          width: 250px;
+        }
+        .DVBE__logo-dvbe {
+          width: 100px;
+        }
+      }
+
+      h2 {
+        z-index: 0;
+        width: 90%;
+
+        text-align: center;
+        font-size: $S;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 365px) {
+  .DVBE {
+    .DVBE__info {
+      .DVBE__contLogo-urban {
+        width: 270px;
+        .DVBE__logo-urban {
+          width: 200px;
+        }
+        .DVBE__logo-dvbe {
+          width: 70px;
+        }
+      }
+    }
+  }
+}

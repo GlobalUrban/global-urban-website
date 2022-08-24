@@ -1,0 +1,46 @@
+// imports //
+@import "./vars";
+@import "./assets";
+@import "./mixins";
+@import "./components";
+@import "./nav";
+@import "./header";
+@import "./DVBE";
+@import "./two-points";
+@import './some-costumer-review';
+@import './footer';
+
+body {
+  max-width: 1920px;
+  min-width: 340px;
+  font-family: $font-family-1;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p::selection {
+  background-color: $color-orange;
+  color: white;
+}
+
+h1::selection {
+  background-color: $color-orange;
+  color: white;
+}
+
+h2::selection {
+  background-color: $color-orange;
+  color: white;
+}
+
+h3::selection {
+  background-color: $color-orange;
+  color: white;
+}
+
+span::selection {
+  background-color: $color-orange;
+  color: white;
+}
