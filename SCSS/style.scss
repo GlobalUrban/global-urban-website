@@ -10,6 +10,11 @@
 @import './some-costumer-review';
 @import './footer';
 
+@font-face {
+  font-family: 'Myria-Pro';
+  src: url(../Fonts/MYRIADPRO-REGULAR.OTF);
+}
+
 body {
   max-width: 1920px;
   min-width: 340px;
