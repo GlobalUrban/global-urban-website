@@ -1,14 +1,18 @@
-// imports //
+// imports // -----------------------
+//General//
 @import "./vars";
 @import "./assets";
 @import "./mixins";
 @import "./components";
 @import "./nav";
+//Home// 
 @import "./header";
 @import "./DVBE";
 @import "./two-points";
 @import './some-costumer-review';
 @import './footer';
+//About//
+@import './about//header-about';
 
 @font-face {
   font-family: 'Myria-Pro';
@@ -18,7 +22,7 @@
 body {
   max-width: 1920px;
   min-width: 340px;
-  font-family: $font-family-1;
+  font-family: 'Myria-Pro';
 }
 
 h2 {
