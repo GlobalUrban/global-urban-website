@@ -9,6 +9,9 @@
     object-fit: cover;   
 }
 
+
+
+// Title // --------------------------
 @mixin title($position, $width) {
     width: $width;
     height: 50px;
@@ -31,9 +34,17 @@
      background: $color-blue;
 }
 
+// Flex // -----------------------------
 @mixin flex-center {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+@mixin --flex($direction, $position) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $position;
     align-items: center;
 }
 
@@ -50,3 +61,8 @@
     justify-content: space-around;
     align-items: center;
 }
+
+
+
+
+
