@@ -20,6 +20,11 @@
     object-fit: cover;
 }
 
+@mixin img-square($size) {
+    width: $size;
+    height: $size;
+}
+
 
 // Title // --------------------------
 @mixin title($position, $width) {
