@@ -1,0 +1,12 @@
+.about-experience {
+    width: 100%;
+    height: 700px;
+    background: $t1;
+    @include flex-center;
+        .about-experience__container {
+            width: 90%;
+            height: 90%;
+            background: $t2;
+        }
+
+}

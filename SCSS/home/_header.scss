@@ -6,7 +6,8 @@ header {
     
 
     .header__cont-img {
-        @include cont-img();
+        width: 100%;
+        height: 100%;
     }
 
     .header-img {
@@ -74,8 +75,9 @@ header {
         height: 350px;
 
         .header__cont-img {
-            @include cont-img();
-            overflow: hidden
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
         }
     
         .header-img {
