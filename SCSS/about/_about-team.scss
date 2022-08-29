@@ -1,0 +1,119 @@
+.about-team {
+  width: 100%;
+  height: auto;
+  @include flex-center;
+  padding-bottom: 100px;
+
+  .about-team__container {
+    width: 90%;
+    max-width: 1200px;
+    min-width: 1200px;
+    gap: 50px;
+    @include flex-around(column);
+
+    .about-team__title {
+      @include title(center, 250px);
+      font-size: $X;
+      .about-team__line {
+        @include tittle-line(100%);
+      }
+    }
+
+    .about-team__team {
+      @include flex-center;
+      gap: 100px;
+      flex-wrap: wrap;
+      .about-team__item {
+        @include flex-around(column);
+        gap: 15px;
+
+        img {
+          @include img-square(200px);
+        }
+
+        h2 {
+          color: $color-orange;
+        }
+      }
+    }
+  }
+}
+
+// Media Querys // --------------------- 
+@media screen and(max-width: 1400px) {
+    .about-team {
+        width: 100%;
+        height: auto;
+        @include flex-center;
+      
+        .about-team__container {
+          width: 90%;
+          //
+          max-width: 1000px;
+          min-width: 1000px;
+          
+          //
+          min-width: 500px;
+          gap: 50px;
+          @include flex-around(column);
+        }
+      } 
+}
+
+@media screen and(max-width: 1200px) {
+    .about-team {
+        width: 100%;
+        height: auto;
+        @include flex-center;
+      
+        .about-team__container {
+          width: 90%;
+          //
+          min-width: 550px;
+          gap: 50px;
+          @include flex-around(column);
+        }
+      } 
+}
+
+@media screen and(max-width: 500px) {
+    .about-team {   
+        .about-team__container {
+          width: 90%;
+          //
+          min-width: 350px;
+          gap: 50px;
+          @include flex-around(column);
+      
+          .about-team__title {
+            //
+            @include title(center, 150px);
+            font-size: $X;
+            .about-team__line {
+              @include tittle-line(100%);
+            }
+          }
+      
+          .about-team__team {
+            @include flex-center;
+            //
+            gap: 70px;
+            flex-wrap: wrap;
+            .about-team__item {
+              gap: 7px;
+      
+              img {
+                //
+                @include img-square(150px);
+              }
+      
+              h2 {
+                color: $color-orange;
+                //
+                font-size: $L;
+              }
+            }
+          }
+        }
+      } 
+}
