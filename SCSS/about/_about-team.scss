@@ -82,6 +82,7 @@
           width: 90%;
           //
           min-width: 350px;
+          max-width: 370px;
           gap: 50px;
           @include flex-around(column);
       
