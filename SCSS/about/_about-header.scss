@@ -9,7 +9,7 @@
     width: 1500px;
     height: 100%;
     img {
-      @include img(100%, 100%);
+      @include --img(100%, 100%);
     }
   }
 
@@ -25,9 +25,7 @@
 
       .h-about__info-cont-title {
         width: 80%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+       @include --flex(row, flex-end);
         height: 10%;
 
         .h-about__info-title {

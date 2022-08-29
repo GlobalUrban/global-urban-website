@@ -13,7 +13,7 @@
   display: flex;
 
   .some-costumer-review__bg {
-    @include img(100%, 100%);
+    @include --img(100%, 100%);
   }
 
   .some-costumer-review__container {
@@ -189,7 +189,7 @@
     display: flex;
 
     .some-costumer-review__bg {
-      @include img(100%, 100%);
+      @include --img(100%, 100%);
     }
 
     .some-costumer-review__container {

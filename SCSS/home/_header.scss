@@ -10,7 +10,7 @@ header {
     }
 
     .header-img {
-        @include img(100%, 100%);
+        @include --img(100%, 100%);
         
     }
 
@@ -79,7 +79,7 @@ header {
         }
     
         .header-img {
-            @include img(170%,100%);            
+            @include --img(170%,100%);            
             
              
         }
