@@ -87,6 +87,22 @@
             color: $color-blue;
             font-size: $L;
           }
+
+          .services--h3__bigger {
+            width: 70%;
+
+            @media screen and(max-width: 500px) {
+              width: 80%;
+            }
+          }
+
+          .services--h3__bigger2 {
+            width: 90%;
+
+            @media screen and(max-width: 500px) {
+              width: 90%;
+            }
+          }
         }
       }
     }
@@ -95,7 +111,7 @@
 
 // Media Querys // -----------------------
 
-@media screen and(max-width: 925px) {
+@media screen and(max-width: 1040px) {
   .services-header {
     width: 100%;
     //
@@ -177,6 +193,88 @@
   }
 }
 
+@media screen and(max-width: 820px) {
+  .services-header {
+    width: 100%;
+    //
+    height: 1000px;
+    position: relative;
+    @include flex-center;
+
+    .serices-header__bg {
+      @include img;
+    }
+
+    .services-header__container {
+      //
+      width: 95%;
+      height: 95%;
+      position: absolute;
+      @include --flex(column, center);
+
+      .services-header__top {
+        //
+        padding: 0px;
+        padding-bottom: 20px;
+        width: 100%;
+        height: 30%;
+
+        @include flex-between(column);
+
+        .services-header__title {
+          @include title(flex-start, 200px);
+          color: white;
+          font-size: $X;
+          align-self: flex-start;
+
+          .services-header__line {
+            @include tittle-line(100%);
+            background: white;
+          }
+        }
+
+        .services-header__info {
+          @include flex-between(column);
+          gap: 20px;
+
+          h2 {
+            color: white;
+            font-size: $X;
+          }
+
+          p {
+            display: flex;
+            gap: 40px;
+            @include flex-between(row);
+            width: 100%;
+            min-width: 500px;
+            font-size: $S;
+            color: white;
+
+            img {
+              @include img-square(100px);
+            }
+          }
+        }
+      }
+
+      .services-header__bottom {
+
+        .services-header__bottom-container {
+          .services-header__item {
+            //
+            @include img-square(170px);
+
+            h3 {
+              font-size: $M;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and(max-width: 500px) {
   .services-header {
     width: 100%;
@@ -242,6 +340,10 @@
             @include --flex(column, center);
             gap: 10px;
             background: white;
+            
+            h3 {
+              font-size: $S;
+            }
 
             img {
               width: 50%;
