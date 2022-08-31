@@ -3,6 +3,7 @@
 @import "./mixins";
 @import "./components";
 @import "./nav";
+@import './slider';
 
 //Home// 
 @import "./home/header";
@@ -19,6 +20,10 @@
 //Services//
 @import './services/services-header';
 @import './services/services_grant-writting';
+
+//Portafolio//
+@import './portafolio/public-outreach';
+@import './portafolio/graphic-design';
 
 
 

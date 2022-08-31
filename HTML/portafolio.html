@@ -1,41 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- slider // -->
+    <link rel="stylesheet" href="../CSS/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../CSS/normalize.css" />
-  <link rel="stylesheet" href="../CSS/style.css" />
-  <title>Services</title>
-</head>
+    <title>Services</title>
+  </head>
 
-<body>
-  <!-- nav // ===================================== -->
-  <nav>
-    <a href="../index.html" class="logo">
-      <img class="logo-img1" src="../img/Logo_nav.png" alt="" />
-      <img class="logo-img2" src="../img/logo_dvbe.png" alt="" />
-    </a>
+  <body>
+    <!-- nav // ===================================== -->
+    <nav>
+      <a href="../index.html" class="logo">
+        <img class="logo-img1" src="../img/Logo_nav.png" alt="" />
+        <img class="logo-img2" src="../img/logo_dvbe.png" alt="" />
+      </a>
 
-    <div class="burger">
-      <div class="line l1"></div>
-      <div class="line l2"></div>
-      <div class="line l3"></div>
-    </div>
+      <div class="burger">
+        <div class="line l1"></div>
+        <div class="line l2"></div>
+        <div class="line l3"></div>
+      </div>
 
-    <ul class="nav-links">
-      <li>
-        <a href="./about-us.html">About Us</a>
-      </li>
-      <li><a href="./services.html">Services</a></li>
-      <li><a class="nav--selected"  href="#">Portafolio</a></li>
-      <li><a href="#">Client Review</a></li>
-      <li class="--border"><a href="">Contact Us</a></li>
-    </ul>
-  </nav>
+      <ul class="nav-links">
+        <li>
+          <a href="./about-us.html">About Us</a>
+        </li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a class="nav--selected" href="#">Portafolio</a></li>
+        <li><a href="#">Client Review</a></li>
+        <li class="--border"><a href="">Contact Us</a></li>
+      </ul>
+    </nav>
+    
+    <section class="portfolio">
+        
+      <h1 class="portfolio__title">
+        Portfolio
+        <div class="portfolio__title-line"></div>
+      </h1>
+      <!-- Public Outreach // ------------------------------------ -->
+      <div class="portfolio__cont-slider">
+        <div class="slide-container swiper">
+          <!-- Main Container // ======================================== -->
+          <div class="slide-content">
+            <!-- Container Inside Main // ============================ -->
+            <div class="card-wrapper swiper-wrapper">
+              <!-- Item // ----------------- -->
+              <div class="card swiper-slide">
+                <img src="../img/portafolio/GUS_Portfolio_01.png" alt="" />
+              </div>
+              <!-- -------------------------------- -->
 
-  <script src="../nav.js"></script>
-</body>
+              <!-- Item // ----------------- -->
+              <div class="card swiper-slide">
+                <img src="../img/portafolio/GUS_Portfolio_02.png" alt="" />
+              </div>
+              <!-- -------------------------------- -->
 
+              <!-- Item // ----------------- -->
+              <div class="card swiper-slide">
+                <img src="../img/portafolio/GUS_Portfolio_03.png" alt="" />
+              </div>
+              <!-- -------------------------------- -->
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="portfolio__info">
+        <h2>Public Outreach</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          magni explicabo alias et veritatis quia atque perspiciatis architecto
+          eaque, quis labore. Nisi eligendi enim consectetur ut placeat quasi
+          corrupti delectus nostrum architecto? Recusandae non soluta pariatur
+          similique porro a temporibus fugiat nobis accusantium impedit, at
+          dolorum maiores ex eius! Mollitia?
+        </p>
+      </div>
+      <!-- --------------------------------------------------------- -->
+
+
+      <!-- Graphic Design // ----------------------------------- -->
+      <div class="portfolio__cont-slider portfolio__cont-slider--white">
+        <div class="slide-container swiper">
+          <!-- Main Container // ======================================== -->
+          <div class="slide-content">
+            <!-- Container Inside Main // ============================ -->
+            <div class="card-wrapper swiper-wrapper">
+              <!-- Item // ----------------- -->
+              <div class="card swiper-slide">
+                <img src="../img/portafolio/GUS_Portfolio_04.png" alt="" />
+              </div>
+              <!-- -------------------------------- -->
+
+              <!-- Item // ----------------- -->
+              <div class="card swiper-slide">
+                <img src="../img/portafolio/GUS_Portfolio_05.png" alt="" />
+              </div>
+              <!-- -------------------------------- -->
+
+              <!-- Item // ----------------- -->
+              <div class="card swiper-slide">
+                <img src="../img/portafolio/GUS_Portfolio_06.png" alt="" />
+              </div>
+              <!-- -------------------------------- -->
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn  swiper-navBtn__dark"></div>
+          <div class="swiper-button-prev swiper-navBtn  swiper-navBtn__dark"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="portfolio__info portfolio__info--white ">
+        <h2>Public Outreach</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          magni explicabo alias et veritatis quia atque perspiciatis architecto
+          eaque, quis labore. Nisi eligendi enim consectetur ut placeat quasi
+          corrupti delectus nostrum architecto? Recusandae non soluta pariatur
+          similique porro a temporibus fugiat nobis accusantium impedit, at
+          dolorum maiores ex eius! Mollitia?
+        </p>
+      </div>
+    </section>
+    <!-- --------------------------------------------------------- -->
+    <script src="../JS/slider/swiper-bundle.min.js"></script>
+    <script src="../JS/slider/script.js"></script>
+    <script src="../JS/nav.js"></script>
+  </body>
 </html>

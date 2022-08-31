@@ -1,0 +1,91 @@
+// Slider Image // 
+// Slider item that only have an image:
+@mixin center-image($width, $height) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img {
+        width: $width;
+        height: $height;
+        object-fit: cover;
+    }
+}
+
+
+  .slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    
+  }
+
+//   Item // ------------------
+  .card{
+    border-radius: 5px;
+    height: 500px;
+    width: 250px;
+    min-width: 250px;
+    @include center-image(100%, 100%);
+    box-shadow: 10px 11px 14px -11px rgba(0,0,0,1);
+    -webkit-box-shadow: 10px 11px 14px -11px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 11px 14px -11px rgba(0,0,0,1);
+    
+  }
+
+  
+  
+  .swiper-navBtn{
+    color: #ffffffb7;
+    transition: color 0.1s ease;
+    transition:  0.1s ease-in;
+    font-size: 50px;
+
+  }
+
+  .swiper-navBtn:hover{
+    color: #ffffff;
+    transform: scale(1.2);
+  }
+
+  .swiper-navBtn__dark {
+    color: rgba(0, 0, 0, 0.452);
+    transition: color 0.1s ease;
+    transition:  0.1s ease-in;
+    font-size: 50px;
+  }
+
+  .swiper-navBtn__dark:hover{
+    color: rgba(0, 0, 0, 0.678);
+    transform: scale(1.2);
+  }
+ 
+
+//   Don't Touch // ----------------------
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color: #ffffff;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #ffffff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+  }
+
