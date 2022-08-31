@@ -16,6 +16,8 @@
 
         @media screen and(max-width: 500px) {
             margin-left: 20px;
+            margin-top: 50px;
+            margin-bottom: 30px;
         }
     }
 
@@ -61,6 +63,7 @@
             color: white;
             min-width: 840px;
             text-align: justify;
+            margin-bottom: 30px;
 
             @media screen and(max-width:840px) {
                 min-width: 350px;
