@@ -1,61 +1,72 @@
 .client-review__title {
+  @include title(flex-start, 300px);
+  font-size: $X;
+  align-self: flex-start;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 
-    @include title(flex-start, 300px);
-    font-size: $X;
-    align-self: flex-start;
-    margin-left: 50px;
-    margin-bottom: 50px;
+  @media screen and(max-width: 500px) {
+    margin-left: 20px;
     margin-top: 50px;
+    margin-bottom: 30px;
+    @include title(flex-start, 250px);
+  }
 
-    
-    @media screen and(max-width: 500px) {
-        margin-left: 20px;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        @include title(flex-start, 250px);
-    }
-  
+  .client-review__title-line {
+    @include tittle-line(100%);
+  }
 
-    .client-review__title-line {
-        @include tittle-line(100%);
-        
-    }
-
-    @media screen and(max-width: 500px) {
-        margin-left: 20px;
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }
+  @media screen and(max-width: 500px) {
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
 }
 
 .client-review {
-    @include --flex(column, center);
+  @include --flex(column, center);
 
-   
+  .client-review__clients-container {
+    width: 100%;
+    height: auto;
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
 
-    .client-review__clients-container{
-        width: 100%;
-        height: auto;
-        @include flex-center;
-        flex-wrap: wrap;
-        gap: 50px;
-        margin-bottom: 50px;
-    }
+  .client-review__paragraph {
+    width: 100%;
+    padding: 5vh;
 
-    .client-review__paragraph {
-        width: 100%;
-        padding: 5vh;
-        
-        @include flex-center;
-        font-size: $S;
-        text-align: justify;   
-    }
+    @include flex-center;
+    font-size: $S;
+    text-align: justify;
+  }
 }
 
 .client-review__slider-container {
-    width: 100%;
-        height: auto;
-        padding: 20px;
-        @include --flex(column, center);
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  @include --flex(column, center);
 }
 
+.card-clients {
+  border-radius: 5px;
+  height: 500px;
+  width: 250px;
+  min-width: 250px;
+  @include --flex(column, center);
+
+  gap: 20px;
+
+  .card-clients__cont-img {
+    @include cont-img(90%, 45%);
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
