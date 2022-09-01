@@ -41,6 +41,10 @@
     right: 0px;
   }
 
+  .client-review-dialog__img--left {
+    left: 0px;
+  }
+
   .client-review-dialog__bottom {
     height: 30%;
     width: 100%;
@@ -48,10 +52,12 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
     .client-review-dialog__bottom__cont-name {
       text-align: right;
       margin-left: 70px;
       margin-top: 10px;
+
       span {
         font-size: $M;
         color: $color-orange;
@@ -61,6 +67,25 @@
       font-size: $S;
       color: $color-grey;
     }
+
+    .client-review-dialog__bottom__cont-name--left {
+      text-align: right;
+      margin-right: 80px;
+      margin-top: 10px;
+      font-size: $S;
+      color: $color-grey;
+
+      span {
+        font-size: $M;
+        color: $color-orange;
+        font-weight: 700;
+      }
+
+    
+      
+    }
+
+    
   }
 }
 
