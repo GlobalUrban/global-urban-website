@@ -15,8 +15,6 @@
     align-items: flex-start;
     transition: all 0.4s;
 
-
-
     img {
       @include --img(100%, 100%);
       object-fit: contain;
@@ -32,7 +30,6 @@
       font-size: $S;
     }
   }
-
 
   .client-review-dialog__img {
     width: 200px;
@@ -68,6 +65,8 @@
       color: $color-grey;
     }
 
+
+    // worked yesterday | Missing te responsive part.
     .client-review-dialog__bottom__cont-name--left {
       text-align: right;
       margin-right: 80px;
@@ -80,16 +79,9 @@
         color: $color-orange;
         font-weight: 700;
       }
-
-    
-      
     }
-
-    
   }
 }
-
-
 
 // Media Querys Client Dialog// ------------------------
 @media screen and(max-width: 1500px) {
