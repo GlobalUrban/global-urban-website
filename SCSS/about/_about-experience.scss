@@ -10,6 +10,7 @@
 
     .about-experiences__title {
       @include title(center, 400px);
+      font-size: $X;
       height: 60px;
       .about-experiences__line {
         @include tittle-line(100%);
