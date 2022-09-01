@@ -1,35 +1,37 @@
+.client-review__title {
+
+    @include title(flex-start, 300px);
+    font-size: $X;
+    align-self: flex-start;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    
+    @media screen and(max-width: 500px) {
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        @include title(flex-start, 250px);
+    }
+  
+
+    .client-review__title-line {
+        @include tittle-line(100%);
+        
+    }
+
+    @media screen and(max-width: 500px) {
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
 .client-review {
     @include --flex(column, center);
 
-    .client-review__title {
-
-        @include title(flex-start, 300px);
-        font-size: $X;
-        align-self: flex-start;
-        margin-left: 50px;
-        margin-bottom: 50px;
-        margin-top: 50px;
-
-        
-        @media screen and(max-width: 500px) {
-            margin-left: 20px;
-            margin-top: 50px;
-            margin-bottom: 30px;
-            @include title(flex-start, 250px);
-        }
-      
-
-        .client-review__title-line {
-            @include tittle-line(100%);
-            
-        }
-
-        @media screen and(max-width: 500px) {
-            margin-left: 20px;
-            margin-top: 50px;
-            margin-bottom: 30px;
-        }
-    }
+   
 
     .client-review__clients-container{
         width: 100%;
@@ -39,13 +41,21 @@
         gap: 50px;
         margin-bottom: 50px;
     }
+
+    .client-review__paragraph {
+        width: 100%;
+        padding: 5vh;
+        
+        @include flex-center;
+        font-size: $S;
+        text-align: justify;   
+    }
 }
 
-.client-review__paragraph {
+.client-review__slider-container {
     width: 100%;
-    padding: 5vh;
-    background: $t4;
-    @include flex-center;
-    font-size: $S;
-    text-align: justify;   
+        height: auto;
+        padding: 20px;
+        @include --flex(column, center);
 }
+
