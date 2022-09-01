@@ -6,6 +6,7 @@ nav {
   min-height: 80px;
   background: $color-blue;
   font-family: $font-family-1;
+  overflow-x: hidden;
 
   .logo {
     margin-left: 30px;
@@ -150,10 +151,6 @@ nav {
 }
 
 @media screen and(max-width: 925px ) {
-  body {
-    overflow-x: hidden;
-  }
-
   nav {
     height: 10vh;
 
@@ -241,6 +238,12 @@ nav {
 
       .l3 {
         transform: rotate(45deg) translate(-6px, -7px);
+      }
+
+      body {
+        overflow-x: hidden;
+        z-index: 200;
+        height: 100%;
       }
     }
   }

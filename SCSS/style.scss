@@ -29,6 +29,10 @@
 //Client Review//
 @import './client-review/client-review';
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 
 @font-face {
