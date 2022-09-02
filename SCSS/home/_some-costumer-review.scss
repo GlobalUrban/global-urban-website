@@ -68,9 +68,10 @@
         .some-costumer-review__right-clientsAction {
           width: 400px;
           height: 250px;
+          min-height: 260px;
           display: flex;
           @include --flex(column, center);
-          gap: 5px;
+          gap: 12px;
 
           transform: translateX(18%);
 
