@@ -43,7 +43,7 @@
           @include title(flex-start, 400px);
 
           .some-costumer-review__title-line {
-            @include tittle-line(50%);
+            @include tittle-line(80%);
           }
         }
 
@@ -67,12 +67,11 @@
 
         .some-costumer-review__right-clientsAction {
           width: 400px;
-          height: 300px;
+          height: 250px;
           display: flex;
-          flex-direction: column;
+          @include --flex(column, center);
           gap: 5px;
-          align-items: center;
-          justify-content: center;
+
           transform: translateX(18%);
 
           h1 {
@@ -80,8 +79,8 @@
             font-size: $XL;
             color: $color-blue;
             font-weight: 900;
-            margin-bottom: 0;
-            margin-top: 0;
+            line-height: 0px;
+            margin: 0px;
           }
 
           button {
@@ -93,6 +92,13 @@
             font-weight: 900;
             border-radius: 15px;
             border: solid $color-orange 5px;
+            transition: all 0.2s;
+
+            &:hover {
+              background: $color-orange;
+              color: white;
+              transform: scale(1.07);
+            }
           }
         }
       }
@@ -115,6 +121,7 @@
           }
 
           .some-costumer-review__info {
+            font-size: $M;
           }
         }
       }
@@ -130,7 +137,10 @@
             }
 
             button {
+              width: 250px;
+              height: 70px;
               font-size: $X;
+
             }
           }
         }
@@ -287,47 +297,43 @@
     height: 900px;
 
     .some-costumer-review__container {
+      .some-costumer-review__container-left {
+        .some-costumer-review__left {
+          width: 95%;
+          height: 90%;
 
-        .some-costumer-review__container-left {
-            
-            .some-costumer-review__left {
-              width: 95%;
-              height: 90%;
-      
- 
-              .some-costumer-review__info {
-                width: 90%;
-                align-self: center;
-                font-size: $S;
-                text-align: justify;
-              }
+          .some-costumer-review__info {
+            width: 90%;
+            align-self: center;
+            font-size: $S;
+            text-align: justify;
+          }
+        }
+      }
+      .some-costumer-review__container-right {
+        .some-costumer-review__right {
+          height: 80%;
+          align-items: center;
+          gap: 0px;
+
+          .some-costumer-review__right-clientsAction {
+            h1 {
+              font-size: $X;
+            }
+
+            button {
+              color: $color-orange;
+              font-size: $X;
             }
           }
-        .some-costumer-review__container-right {
-            .some-costumer-review__right {
-              height: 80%;
-              align-items: center;
-              gap: 0px;
-      
-              .some-costumer-review__right-clientsAction {
-             
-                h1 {
-                  font-size: $X;
-                }
-      
-                button {
-                  color: $color-orange;
-                  font-size: $X;
-                }
-              }
-            }
-          }
+        }
+      }
     }
   }
 }
 
 @media screen and(max-width: 400px) {
-    .some-costumer-review {
-      height: 1000px;
-    }
+  .some-costumer-review {
+    height: 1000px;
   }
+}
