@@ -37,6 +37,14 @@
 
         h2 {
           color: $color-orange;
+          @include --flex(column,center);
+          margin-bottom: 7px;
+
+          span{
+          color: $color-blue;
+          font-size: $M;
+          text-align: center;
+          }
         }
 
         p {
