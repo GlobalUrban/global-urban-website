@@ -2743,7 +2743,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
      object-fit: cover;
 }
 .h-about .h-about__cont-info {
-  width: auto;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -2796,7 +2796,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   text-align: justify;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1160px) {
   .h-about {
     width: 100%;
     height: 50vh;
@@ -2836,7 +2836,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
     font-size: 16px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 730px) {
   .h-about {
     width: 100%;
     height: 700px;
@@ -2899,13 +2899,13 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
     color: white;
   }
 }
-@media screen and (max-width: 600px) and (max-width: 500px) {
+@media screen and (max-width: 730px) and (max-width: 500px) {
   .h-about .h-about__cont-info .h-about__info .h-about__info-cont-title .h-about__info-title {
     font-size: 30px;
     height: 40px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 730px) {
   .h-about .h-about__cont-info .h-about__info .h-about__info-cont-title .h-about__info-title .h-about__info-line {
     width: 60%;
     height: 3px;
@@ -2914,7 +2914,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
     background: white;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 730px) {
   .h-about .h-about__cont-info .h-about__info p {
     height: 80%;
     width: 100%;
