@@ -2805,7 +2805,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
     background: none;
   }
   .h-about .h-about__cont-img {
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -2818,7 +2818,44 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
        object-fit: cover;
   }
   .h-about .h-about__cont-info {
-    width: 50%;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .h-about .h-about__cont-info .h-about__info {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .h-about {
+    width: 100%;
+    height: 50vh;
+    min-height: 350px;
+    max-height: 500px;
+    background: none;
+  }
+  .h-about .h-about__cont-img {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .h-about .h-about__cont-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .h-about .h-about__cont-info {
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -2839,9 +2876,9 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
 @media screen and (max-width: 730px) {
   .h-about {
     width: 100%;
-    height: 700px;
-    min-height: 0px;
-    max-height: 700px;
+    height: 500px;
+    min-height: 600px;
+    max-height: 600px;
     background: none;
     display: flex;
     flex-direction: column;
@@ -2850,7 +2887,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   }
   .h-about .h-about__cont-img {
     width: 100%;
-    height: none;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2876,7 +2913,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    transform: translateY(-30%);
+    transform: translateY(-20%);
   }
   .h-about .h-about__cont-info .h-about__info .h-about__info-cont-title {
     width: 100%;
@@ -2918,8 +2955,25 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   .h-about .h-about__cont-info .h-about__info p {
     height: 80%;
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
     text-align: justify;
+  }
+}
+@media screen and (max-width: 530px) {
+  .h-about {
+    width: 100%;
+    height: 800px;
+    min-height: 800px;
+    max-height: 800px;
+  }
+  .h-about .h-about__cont-info .h-about__info {
+    width: 95%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(-50%);
   }
 }
 .about-experience {
@@ -2964,6 +3018,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
 .about-experience .about-experience__container .about-experiences__items__container {
   width: 100%;
   height: 80%;
+  gap: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -2992,9 +3047,18 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
 .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt h2 {
   font-size: 40px;
   color: #EF8E32;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt h2 span {
+  color: #31357A;
+  font-size: 30px;
 }
 .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt p {
   font-size: 25px;
+  width: 95%;
   text-align: justify;
 }
 
