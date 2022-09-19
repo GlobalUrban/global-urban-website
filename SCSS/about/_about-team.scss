@@ -6,8 +6,8 @@
 
   .about-team__container {
     width: 90%;
-    max-width: 1200px;
-    min-width: 1200px;
+    max-width: 1700px;
+    min-width: 1400px;
     gap: 50px;
     @include flex-around(column);
 
@@ -21,18 +21,36 @@
 
     .about-team__team {
       @include flex-center;
-      gap: 100px;
+      gap: 10px;
       flex-wrap: wrap;
+
+      // Item // 
       .about-team__item {
         @include flex-around(column);
         gap: 15px;
+        width: 450px;
+        margin-bottom: 50px;
 
         img {
-          @include img-square(200px);
+          @include img-square(250px);
         }
 
         h2 {
           color: $color-orange;
+          @include --flex(column,center);
+          margin-bottom: 7px;
+
+          span{
+          color: $color-blue;
+          font-size: $M;
+          text-align: center;
+          }
+        }
+
+        p {
+          width: 85%;
+          font-size: $S;
+          text-align: justify;
         }
       }
     }
@@ -47,15 +65,37 @@
         @include flex-center;
       
         .about-team__container {
-          width: 90%;
+          width: 95%;
           //
-          max-width: 1000px;
+          max-width: 1200px;
           min-width: 1000px;
           
           //
           min-width: 500px;
           gap: 50px;
           @include flex-around(column);
+
+          .about-team__team {
+            gap: 30px;
+            .about-team__item {
+              @include flex-around(column);
+              gap: 5px;
+              width: 350px;
+      
+              img {
+                @include img-square(200px);
+              }
+      
+              h2 {
+                color: $color-orange;
+              }
+      
+              p {
+                font-size: $S;
+                text-align: justify;
+              }
+            }
+          }
         }
       } 
 }
@@ -67,7 +107,8 @@
         @include flex-center;
       
         .about-team__container {
-          width: 90%;
+          width: 100%;
+          
           //
           min-width: 550px;
           gap: 50px;
@@ -98,10 +139,11 @@
           .about-team__team {
             @include flex-center;
             //
-            gap: 70px;
+            gap: 40px;
             flex-wrap: wrap;
             .about-team__item {
               gap: 7px;
+              margin-bottom: 0px;
       
               img {
                 //
@@ -112,6 +154,11 @@
                 color: $color-orange;
                 //
                 font-size: $L;
+              
+              }
+
+              p {
+                font-size: $XS;
               }
             }
           }

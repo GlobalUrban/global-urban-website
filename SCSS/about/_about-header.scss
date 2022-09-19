@@ -10,7 +10,7 @@
   }
 
   .h-about__cont-info {
-    width: auto;
+    width: 100%;
     height: 100%;
     @include flex-center;
 
@@ -45,7 +45,7 @@
 }
 
 // Media Querys // -----------------------------
-@media screen and(max-width: 920px) {
+@media screen and(max-width: 1160px) {
   .h-about {
     width: 100%;
     height: 50vh;
@@ -55,11 +55,46 @@
     
   
     .h-about__cont-img {
-      @include cont-img(50%, 100%); 
+      @include cont-img(40%, 100%); 
     }
   
     .h-about__cont-info {
-      width: 50%;
+      width: 70%;
+      height: 100%;
+      @include flex-center;
+  
+      .h-about__info {
+        width: 90%;
+        height: 95%;
+        @include flex-around(column);
+  
+        .h-about__info-cont-title {
+        }
+  
+        // p {
+        //   font-size: $XS;
+        // }
+      }
+    }
+  }
+  
+}
+
+@media screen and(max-width: 1160px) {
+  .h-about {
+    width: 100%;
+    height: 50vh;
+    min-height: 350px;
+    max-height: 500px;
+    background: none;
+    
+  
+    .h-about__cont-img {
+      @include cont-img(40%, 100%); 
+    }
+  
+    .h-about__cont-info {
+      width: 70%;
       height: 100%;
       @include flex-center;
   
@@ -72,7 +107,6 @@
         }
   
         p {
-
           font-size: $XS;
         }
       }
@@ -81,18 +115,20 @@
   
 }
 
-@media screen and(max-width: 600px) {
+
+
+@media screen and(max-width: 730px) {
   .h-about {
     width: 100%;
-    height: 700px;
-    min-height: 0px;
-    max-height: 700px;
+    height: 500px;
+    min-height: 600px;
+    max-height: 600px;
     background: none;
     @include --flex(column, none);
     
   
     .h-about__cont-img {
-      @include cont-img(100%, none); 
+      @include cont-img(100%, auto); 
       min-height: 300px;
       // img {
       //   height: 400px;
@@ -108,7 +144,7 @@
         width: 95%;
         height: 300px;
         @include flex-around(column);
-        transform: translateY(-30%);
+        transform: translateY(-20%);
   
         .h-about__info-cont-title {
           width: 100%;
@@ -130,9 +166,39 @@
         p {
           height: 80%;
           width: 100%;
-          font-size: $XS;
+          font-size: $S;
           text-align: justify;
         }
+      }
+    }
+  }
+  
+}
+
+
+
+@media screen and(max-width: 530px) {
+  .h-about {
+    width: 100%;
+    height: 800px;
+    min-height: 800px;
+    max-height: 800px;
+ 
+    
+  
+    .h-about__cont-img {
+    
+    }
+  
+    .h-about__cont-info {
+   
+  
+      .h-about__info {
+        width: 95%;
+        height: 300px;
+        @include flex-around(column);
+        transform: translateY(-50%);
+  
       }
     }
   }
