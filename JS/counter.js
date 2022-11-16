@@ -16,9 +16,9 @@ const footerTop = document.querySelector("#footer-top");
 // }
 
 function NumAnimation() {
-    let days = setInterval(numDays, 0.00000000001);
+    let days = setInterval(numDays, 20);
     let coffe = setInterval(numCoffe, 0.02);
-    let clients = setInterval(numClients, 50);
+    let clients = setInterval(numClients, 150);
     
     let count1 = 1;
     let count2 = 1;

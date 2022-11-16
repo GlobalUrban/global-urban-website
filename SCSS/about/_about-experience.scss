@@ -1,195 +1,49 @@
-.about-experience {
+.about-us__principals {
+  margin-top: 100px;
   width: 100%;
-  height: 700px;
+  @include --flex(column, center);
 
-  @include flex-center;
-  .about-experience__container {
-    width: 90%;
-    height: 95%;
-    @include --flex(column, space-between);
+  .about-us__principals-title {
+    @include title(center, 350px);
+    font-size: $X;
+    margin-bottom: 50px;
 
-    .about-experiences__title {
-      @include title(center, 400px);
-      font-size: $X;
-      height: 60px;
-      .about-experiences__line {
-        @include tittle-line(100%);
-      }
-    }
-
-    .about-experiences__items__container {
-      width: 100%;
-      height: 80%;
-      gap: 50px;
-      @include flex-around(row);
-
-      .about-experiences__container-item {
-        width: 45%;
-        height: 100%;
-        @include flex-around(column);
-
-        img {
-          @include img-square(200px);
-        }
-        .about-experiences__item-txt {
-          width: 80%;
-          @include --flex(column, center);
-          gap: 20px;
-
-          h2 {
-            font-size: $X;
-            color: $color-orange;
-            @include --flex(column,center);
-            span{
-            color: $color-blue;
-            font-size: $L;
-            }
-          }
-
-          p {
-            font-size: $M;
-            width: 95%;
-            text-align: justify;
-          }
-        }
-      }
+    .about-us__principals-tittle-line {
+      @include tittle-line(100%);
     }
   }
-}
 
-// Mededia Querys // -------------------
-@media screen and(max-width: 1200px) {
-  .about-experience {
-    .about-experience__container {
-      // changed
-      height: 90%;
+  .about-us__principals-container {
+    width: 95%;
+    @include flex-between(row);
 
-      .about-experiences__items__container {
-        .about-experiences__container-item {
-          img {
-            @include img-square(200px);
-          }
-          .about-experiences__item-txt {
-            width: 80%;
-            @include --flex(column, center);
-            gap: 20px;
+    .principal-container {
+      width: 49%;
+      min-height: 655px;
+      padding: 3% 7%;
+      background: $color-blue;
+      color: white;
 
-            h2 {
-              font-size: $L;
-              color: $color-orange;
-            }
-
-            p {
-              font-size: $S;
-              text-align: justify;
-            }
-          }
-        }
+      img {
+        width: 300px;
       }
-    }
-  }
-}
 
-@media screen and(max-width: 765px) {
-  .about-experience {
-    width: 100%;
-    .about-experience__container {
-      width: 100%;
-      height: 90%;
+      @include --flex(column, center);
 
-      .about-experiences__items__container {
-        width: 100%;
-        height: 85%;
+      h2 {
+        text-align: center;
+        color: $color-orange;
+        margin: 30px 0;
 
-        .about-experiences__container-item {
-          width: 45%;
-
-          img {
-            @include img-square(200px);
-          }
-          .about-experiences__item-txt {
-            width: 90%;
-            @include --flex(column, center);
-            gap: 20px;
-
-            h2 {
-              font-size: $L;
-              color: $color-orange;
-            }
-
-            p {
-              font-size: $S;
-              text-align: justify;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and(max-width: 765px) {
-  .about-experience {
-    .about-experience__container {
-      // changed//
-      width: 100%;
-      height: 90%;
-      @include --flex(column, space-between);
-
-      .about-experiences__items__container {
-        // changed
-        width: 100%;
-        height: 85%;
-        @include flex-around(row);
-
-        .about-experiences__container-item {
-        }
-      }
-    }
-  }
-}
-
-@media screen and(max-width: 552px) {
-  .about-experience {
-    // changed
-    width: 100%;
-    height: 1200px;
-    @include flex-center;
-    .about-experience__container {
-      width: 100%;
-      height: 90%;
-      @include --flex(column, space-between);
-      gap: 0px;
-
-      .about-experiences__title {
-        //
-        @include title(center, 300px);
-        font-size: $X;
-        height: 50px;
-        .about-experiences__line {
-          @include tittle-line(100%);
+        span {
+          color: white;
+          font-size: $M;
         }
       }
 
-      .about-experiences__items__container {
-        // changed
-        width: 100%;
-        height: 85%;
-        @include flex-around(column);
-
-        .about-experiences__container-item {
-          //
-          width: 95%;
-          height: 100%;
-          @include flex-around(column);
-
-          img {
-            @include img-square(200px);
-          }
-          .about-experiences__item-txt {
-            width: 90%;
-          }
-        }
+      p {
+        font-size: $S;
+        text-align: justify;
       }
     }
   }

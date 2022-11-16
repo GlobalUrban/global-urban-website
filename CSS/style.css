@@ -2976,23 +2976,16 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
     transform: translateY(-50%);
   }
 }
-.about-experience {
+.about-us__principals {
+  margin-top: 100px;
   width: 100%;
-  height: 700px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.about-experience .about-experience__container {
-  width: 90%;
-  height: 95%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.about-experience .about-experience__container .about-experiences__title {
-  width: 400px;
+.about-us__principals .about-us__principals-title {
+  width: 350px;
   height: 50px;
   display: flex;
   flex-direction: column;
@@ -3001,215 +2994,55 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   color: #31357A;
   font-weight: 900;
   font-size: 40px;
-  height: 60px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 500px) {
-  .about-experience .about-experience__container .about-experiences__title {
+  .about-us__principals .about-us__principals-title {
     font-size: 30px;
     height: 40px;
   }
 }
-.about-experience .about-experience__container .about-experiences__title .about-experiences__line {
+.about-us__principals .about-us__principals-title .about-us__principals-tittle-line {
   width: 100%;
   height: 3px;
   align-self: flex-start;
   background: #31357A;
 }
-.about-experience .about-experience__container .about-experiences__items__container {
-  width: 100%;
-  height: 80%;
-  gap: 50px;
+.about-us__principals .about-us__principals-container {
+  width: 95%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
-.about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item {
-  width: 45%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item img {
-  width: 200px;
-  height: 200px;
-}
-.about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt {
-  width: 80%;
+.about-us__principals .about-us__principals-container .principal-container {
+  width: 49%;
+  min-height: 655px;
+  padding: 3% 7%;
+  background: #31357A;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
-.about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt h2 {
-  font-size: 40px;
+.about-us__principals .about-us__principals-container .principal-container img {
+  width: 300px;
+}
+.about-us__principals .about-us__principals-container .principal-container h2 {
+  text-align: center;
   color: #EF8E32;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 30px 0;
 }
-.about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt h2 span {
-  color: #31357A;
-  font-size: 30px;
-}
-.about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt p {
+.about-us__principals .about-us__principals-container .principal-container h2 span {
+  color: white;
   font-size: 25px;
-  width: 95%;
+}
+.about-us__principals .about-us__principals-container .principal-container p {
+  font-size: 20px;
   text-align: justify;
 }
 
-@media screen and (max-width: 1200px) {
-  .about-experience .about-experience__container {
-    height: 90%;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item img {
-    width: 200px;
-    height: 200px;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt h2 {
-    font-size: 30px;
-    color: #EF8E32;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt p {
-    font-size: 20px;
-    text-align: justify;
-  }
-}
-@media screen and (max-width: 765px) {
-  .about-experience {
-    width: 100%;
-  }
-  .about-experience .about-experience__container {
-    width: 100%;
-    height: 90%;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container {
-    width: 100%;
-    height: 85%;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item {
-    width: 45%;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item img {
-    width: 200px;
-    height: 200px;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt h2 {
-    font-size: 30px;
-    color: #EF8E32;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt p {
-    font-size: 20px;
-    text-align: justify;
-  }
-}
-@media screen and (max-width: 765px) {
-  .about-experience .about-experience__container {
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container {
-    width: 100%;
-    height: 85%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 552px) {
-  .about-experience {
-    width: 100%;
-    height: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .about-experience .about-experience__container {
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0px;
-  }
-  .about-experience .about-experience__container .about-experiences__title {
-    width: 300px;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    color: #31357A;
-    font-weight: 900;
-    font-size: 40px;
-    height: 50px;
-  }
-}
-@media screen and (max-width: 552px) and (max-width: 500px) {
-  .about-experience .about-experience__container .about-experiences__title {
-    font-size: 30px;
-    height: 40px;
-  }
-}
-@media screen and (max-width: 552px) {
-  .about-experience .about-experience__container .about-experiences__title .about-experiences__line {
-    width: 100%;
-    height: 3px;
-    align-self: flex-start;
-    background: #31357A;
-  }
-}
-@media screen and (max-width: 552px) {
-  .about-experience .about-experience__container .about-experiences__items__container {
-    width: 100%;
-    height: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item {
-    width: 95%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item img {
-    width: 200px;
-    height: 200px;
-  }
-  .about-experience .about-experience__container .about-experiences__items__container .about-experiences__container-item .about-experiences__item-txt {
-    width: 90%;
-  }
-}
 .about-team {
   width: 100%;
   height: auto;
