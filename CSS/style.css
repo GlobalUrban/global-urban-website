@@ -2679,7 +2679,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
 }
 .about-us {
   width: 100%;
-  height: 2400px;
+  height: 3000px;
   display: flex;
   flex-direction: column;
   background-image: url("../../img/about/aboug-bg.png");
@@ -3040,6 +3040,94 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
 }
 .about-us__principals .about-us__principals-container .principal-container p {
   font-size: 20px;
+  text-align: justify;
+}
+
+.about-us__team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.about-us__team .about-us__team-title {
+  width: 800px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #31357A;
+  font-weight: 900;
+  align-self: flex-start;
+  font-size: 40px;
+  margin-bottom: 50px;
+  margin-left: 2.5%;
+}
+@media screen and (max-width: 500px) {
+  .about-us__team .about-us__team-title {
+    font-size: 30px;
+    height: 40px;
+  }
+}
+.about-us__team .about-us__team-title .about-us__team-title-line {
+  width: 100%;
+  height: 3px;
+  align-self: flex-start;
+  background: #31357A;
+}
+.about-us__team .container {
+  width: 100%;
+  overflow-x: hidden;
+}
+.about-us__team .container .slider {
+  width: 400%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 5px;
+  display: flex;
+  transition: all 2s ease-in-out;
+}
+.about-us__team .container .slider .slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us__team .container .slider .slide .about-us__team-container {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-us__team .container .slider .slide .about-us__team-container .team-container {
+  width: 30%;
+  padding: 2% 3%;
+  background: #31357A;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-us__team .container .slider .slide .about-us__team-container .team-container img {
+  width: 200px;
+}
+.about-us__team .container .slider .slide .about-us__team-container .team-container h2 {
+  text-align: center;
+  color: #EF8E32;
+  margin: 30px 0;
+  font-size: 25px;
+}
+.about-us__team .container .slider .slide .about-us__team-container .team-container h2 span {
+  color: white;
+  font-size: 20px;
+}
+.about-us__team .container .slider .slide .about-us__team-container .team-container p {
+  font-size: 16px;
   text-align: justify;
 }
 
