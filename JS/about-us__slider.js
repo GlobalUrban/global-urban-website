@@ -12,8 +12,8 @@ function Slider() {
     slider.style = `margin-left: -${a}%`;
     a += 100;
     console.log(a);
-    a = a == 300? 0 : a;
-  }, 5000);
+    a = a == 200? 0 : a;
+  }, 7000);
 }
 
 
