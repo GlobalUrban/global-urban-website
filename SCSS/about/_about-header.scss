@@ -6,7 +6,7 @@
   background: none;
 
   .h-about__cont-img {
-    @include cont-img(1500px, 100%); 
+    @include cont-img(1500px, 100%);
   }
 
   .h-about__cont-info {
@@ -21,7 +21,7 @@
 
       .h-about__info-cont-title {
         width: 80%;
-       @include --flex(row, flex-end);
+        @include --flex(row, flex-end);
         height: 10%;
 
         .h-about__info-title {
@@ -52,32 +52,30 @@
     min-height: 350px;
     max-height: 500px;
     background: none;
-    
-  
+
     .h-about__cont-img {
-      @include cont-img(40%, 100%); 
+      @include cont-img(40%, 100%);
     }
-  
+
     .h-about__cont-info {
       width: 70%;
       height: 100%;
       @include flex-center;
-  
+
       .h-about__info {
         width: 90%;
         height: 95%;
         @include flex-around(column);
-  
+
         .h-about__info-cont-title {
         }
-  
+
         // p {
         //   font-size: $XS;
         // }
       }
     }
   }
-  
 }
 
 @media screen and(max-width: 1160px) {
@@ -87,35 +85,31 @@
     min-height: 350px;
     max-height: 500px;
     background: none;
-    
-  
+
     .h-about__cont-img {
-      @include cont-img(40%, 100%); 
+      @include cont-img(40%, 100%);
     }
-  
+
     .h-about__cont-info {
       width: 70%;
       height: 100%;
       @include flex-center;
-  
+
       .h-about__info {
         width: 90%;
         height: 95%;
         @include flex-around(column);
-  
+
         .h-about__info-cont-title {
         }
-  
+
         p {
           font-size: $XS;
         }
       }
     }
   }
-  
 }
-
-
 
 @media screen and(max-width: 730px) {
   .h-about {
@@ -125,34 +119,32 @@
     max-height: 600px;
     background: none;
     @include --flex(column, none);
-    
-  
+
     .h-about__cont-img {
-      @include cont-img(100%, auto); 
+      @include cont-img(100%, auto);
       min-height: 300px;
       // img {
       //   height: 400px;
       // }
     }
-  
+
     .h-about__cont-info {
       width: 90%;
       height: 100%;
       @include flex-center;
-  
+
       .h-about__info {
         width: 95%;
         height: 300px;
         @include flex-around(column);
         transform: translateY(-20%);
-  
+
         .h-about__info-cont-title {
           width: 100%;
-         @include --flex(row, flex-start);
+          @include --flex(row, flex-start);
           height: 15%;
           margin-bottom: 50px;
-          
-  
+
           .h-about__info-title {
             @include title(flex-start, 250px);
             color: white;
@@ -162,7 +154,7 @@
             }
           }
         }
-  
+
         p {
           height: 80%;
           width: 100%;
@@ -172,10 +164,7 @@
       }
     }
   }
-  
 }
-
-
 
 @media screen and(max-width: 530px) {
   .h-about {
@@ -183,26 +172,17 @@
     height: 800px;
     min-height: 800px;
     max-height: 800px;
- 
-    
-  
+
     .h-about__cont-img {
-    
     }
-  
+
     .h-about__cont-info {
-   
-  
       .h-about__info {
         width: 95%;
         height: 300px;
         @include flex-around(column);
-        transform: translateY(-50%);
-  
+        transform: translateY(-40%);
       }
     }
   }
-  
 }
-
-

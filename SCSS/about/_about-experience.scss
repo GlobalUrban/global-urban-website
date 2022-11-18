@@ -1,196 +1,296 @@
-.about-experience {
+// About Us PRINCIPALS // ====================
+.about-us__principals {
+  margin-top: 100px;
+
+  @media screen and (max-width: 530px) {
+    margin-top: 0px;
+  }
   width: 100%;
-  height: 700px;
+  @include --flex(column, center);
 
-  @include flex-center;
-  .about-experience__container {
-    width: 90%;
-    height: 95%;
-    @include --flex(column, space-between);
+  .about-us__principals-title {
+    @include title(center, 350px);
+    font-size: $X;
+    margin-bottom: 70px;
 
-    .about-experiences__title {
-      @include title(center, 400px);
-      font-size: $X;
-      height: 60px;
-      .about-experiences__line {
-        @include tittle-line(100%);
-      }
+    .about-us__principals-tittle-line {
+      @include tittle-line(100%);
     }
+  }
 
-    .about-experiences__items__container {
-      width: 100%;
-      height: 80%;
+  .about-us__principals-container {
+    width: 95%;
+    @include flex-between(row);
+
+    @media screen and(max-width: 800px) {
+      @include --flex(column, center);
       gap: 50px;
-      @include flex-around(row);
+    }
 
-      .about-experiences__container-item {
-        width: 45%;
-        height: 100%;
-        @include flex-around(column);
+    .principal-container {
+      width: 49%;
+      padding: 0 5%;
+      padding-bottom: 5%;
+      background: $color-orange;
+      color: white;
+      @include --flex(column, center);
 
-        img {
-          @include img-square(200px);
+      @media screen and(max-width: 800px) {
+        width: 95%;
+        max-width: 600px;
+      }
+
+      img {
+        width: 300px;
+        transform: translateY(-20%);
+
+        @media screen and(max-width:925px) {
+          width: 200px;
         }
-        .about-experiences__item-txt {
-          width: 80%;
-          @include --flex(column, center);
-          gap: 20px;
+      }
 
-          h2 {
-            font-size: $X;
-            color: $color-orange;
-            @include --flex(column,center);
-            span{
-            color: $color-blue;
-            font-size: $L;
-            }
-          }
+      h2 {
+        text-align: center;
+        // color: $color-orange;
+        margin-bottom: 30px;
 
-          p {
-            font-size: $M;
-            width: 95%;
-            text-align: justify;
-          }
+        span {
+          color: white;
+          font-size: $M;
         }
+      }
+
+      p {
+        font-size: $S;
+        text-align: justify;
       }
     }
   }
 }
 
-// Mededia Querys // -------------------
-@media screen and(max-width: 1200px) {
-  .about-experience {
-    .about-experience__container {
-      // changed
-      height: 90%;
+// =============================================
 
-      .about-experiences__items__container {
-        .about-experiences__container-item {
-          img {
-            @include img-square(200px);
-          }
-          .about-experiences__item-txt {
-            width: 80%;
+
+// DESKTOP || About Us TEAM ==================================
+.about-us__team {
+  @include --flex(column, center);
+
+  // Breakpoint //
+  @media screen and(max-width: 1000px) {
+    display: none;
+  }
+
+  margin-top: 150px;
+
+  // Title//
+  .about-us__team-title {
+    @include title(flex-start, 800px);
+    align-self: flex-start;
+    font-size: $X;
+    margin-bottom: 50px;
+    margin-left: 2.5%;
+
+    .about-us__team-title-line {
+      @include tittle-line(100%);
+    }
+  }
+
+  // Slider // -----------------------------------
+  .container {
+    width: 100%;
+    overflow-x: hidden;
+
+    .slider {
+      width: 200%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      gap: 5px;
+      display: flex;
+      transition: all 2s ease-in-out;
+
+      .slide {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .about-us__team-container {
+          width: 85%;
+          max-width: 1500px;
+          @include flex-between(row);
+
+          .team-container {
+            width: 30%;
+            max-width: 400px;
+            min-height: 450px;
+            position: relative;
+            margin-top: 70px;
+            padding: 0% 3%;
+            padding-bottom: 3%;
+            padding-top: 13%;
+            background: $color-blue;
+            color: white;
+
+            @media screen and(max-width: 1500px) {
+              padding-top: 15%;
+            }
+
+            img {
+              width: 200px;
+              position: absolute;
+              transform: translateY(-115%);
+
+              @media screen and(max-width: 1160px) {
+                width: 170px;
+                transform: translateY(-135%);
+              }
+            }
+
             @include --flex(column, center);
-            gap: 20px;
 
             h2 {
-              font-size: $L;
+              text-align: center;
               color: $color-orange;
+              margin-bottom: 20px;
+              font-size: $M;
+
+              span {
+                color: white;
+                font-size: $S;
+              }
             }
 
             p {
-              font-size: $S;
+              font-size: $XS;
               text-align: justify;
             }
           }
         }
       }
     }
+
+    .slider-creative-team {
+      width: 400%;
+    }
   }
 }
 
-@media screen and(max-width: 765px) {
-  .about-experience {
+// MOBILE || About Us TEAM ==================================
+.mobile-about-us__team {
+  @include --flex(column, center);
+
+  @media screen and (max-width: 530px) {
+    margin-top: 70px;
+  }
+  
+  display: none;
+
+  // Breakpoint //
+  @media screen and(max-width: 1000px) {
+    display: flex;
+  }
+  margin-top: 150px;
+
+  // Title//
+  .about-us__team-title {
+    @include title(center, 90%);
+    text-align: center;
+    height: 40px;
+
+    @media screen and(max-width: 500px) {
+      height: 80px;
+    }
+    
+    font-size: $M;
+    margin-bottom: 20px;
+
+    .about-us__team-title-line {
+      @include tittle-line(100%);
+    }
+  }
+
+  // Slider // -----------------------------------
+  .container {
     width: 100%;
-    .about-experience__container {
-      width: 100%;
-      height: 90%;
+    overflow-x: hidden;
 
-      .about-experiences__items__container {
+    .slider {
+      width: 600%;
+      max-height: 600px;
+      // height: 100%;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      gap: 5px;
+      display: flex;
+      transition: all 1s ease-in-out;
+
+      .slide {
         width: 100%;
-        height: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        .about-experiences__container-item {
-          width: 45%;
+        .about-us__team-container {
+          width: 100%;
+          max-width: 1500px;
+          @include flex-center;
+          align-items: flex-start;
 
-          img {
-            @include img-square(200px);
-          }
-          .about-experiences__item-txt {
-            width: 90%;
+          .team-container {
+            width: 70%;
+            max-width: 500px;
+            min-height: 400px;
+            position: relative;
+            margin-top: 70px;
+            padding: 0% 7%;
+            padding-bottom: 5%;
+            padding-top: 50%;
+            background: $color-blue;
+            color: white;
+
+            @media screen and(max-width: 1500px) {
+              padding-top: 15%;
+            }
+
+            img {
+              width: 250px;
+              position: absolute;
+              transform: translateY(-115%);
+
+              @media screen and(max-width: 1160px) {
+                width: 170px;
+                transform: translateY(-120%);
+              }
+            }
+
             @include --flex(column, center);
-            gap: 20px;
 
             h2 {
-              font-size: $L;
+              text-align: center;
               color: $color-orange;
+              margin-bottom: 20px;
+              font-size: $M;
+
+              span {
+                color: white;
+                font-size: $S;
+              }
             }
 
             p {
-              font-size: $S;
+              font-size: $XS;
               text-align: justify;
             }
           }
         }
       }
     }
-  }
-}
 
-@media screen and(max-width: 765px) {
-  .about-experience {
-    .about-experience__container {
-      // changed//
-      width: 100%;
-      height: 90%;
-      @include --flex(column, space-between);
-
-      .about-experiences__items__container {
-        // changed
-        width: 100%;
-        height: 85%;
-        @include flex-around(row);
-
-        .about-experiences__container-item {
-        }
-      }
-    }
-  }
-}
-
-@media screen and(max-width: 552px) {
-  .about-experience {
-    // changed
-    width: 100%;
-    height: 1200px;
-    @include flex-center;
-    .about-experience__container {
-      width: 100%;
-      height: 90%;
-      @include --flex(column, space-between);
-      gap: 0px;
-
-      .about-experiences__title {
-        //
-        @include title(center, 300px);
-        font-size: $X;
-        height: 50px;
-        .about-experiences__line {
-          @include tittle-line(100%);
-        }
-      }
-
-      .about-experiences__items__container {
-        // changed
-        width: 100%;
-        height: 85%;
-        @include flex-around(column);
-
-        .about-experiences__container-item {
-          //
-          width: 95%;
-          height: 100%;
-          @include flex-around(column);
-
-          img {
-            @include img-square(200px);
-          }
-          .about-experiences__item-txt {
-            width: 90%;
-          }
-        }
-      }
+    .mobile__slider-creative-team {
+      width: 1100%;
     }
   }
 }
