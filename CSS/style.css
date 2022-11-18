@@ -3091,7 +3091,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   overflow-x: hidden;
 }
 .about-us__team .container .slider {
-  width: 400%;
+  width: 200%;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -3117,6 +3117,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
 .about-us__team .container .slider .slide .about-us__team-container .team-container {
   width: 30%;
   max-width: 400px;
+  min-height: 450px;
   position: relative;
   margin-top: 70px;
   padding: 0% 3%;
@@ -3158,6 +3159,9 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
 .about-us__team .container .slider .slide .about-us__team-container .team-container p {
   font-size: 16px;
   text-align: justify;
+}
+.about-us__team .container .slider-creative-team {
+  width: 400%;
 }
 
 .mobile-about-us__team {
@@ -3214,14 +3218,14 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   overflow-x: hidden;
 }
 .mobile-about-us__team .container .slider {
-  width: 400%;
+  width: 600%;
   max-height: 600px;
   justify-content: center;
   align-items: center;
   position: relative;
   gap: 5px;
   display: flex;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .mobile-about-us__team .container .slider .slide {
   width: 100%;
@@ -3282,6 +3286,9 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
 .mobile-about-us__team .container .slider .slide .about-us__team-container .team-container p {
   font-size: 16px;
   text-align: justify;
+}
+.mobile-about-us__team .container .mobile__slider-creative-team {
+  width: 1100%;
 }
 
 .about-team {

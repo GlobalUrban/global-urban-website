@@ -32,6 +32,6 @@ function Slider2() {
       slider2.style = `margin-left: -${a}%`;
       a += 100;
       console.log(a);
-      a = a == 300? 0 : a;
+      a = a == 400? 0 : a;
     }, 6500);
   }
