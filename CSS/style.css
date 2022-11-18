@@ -2689,29 +2689,9 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
     height: 3000px;
   }
 }
-@media screen and (max-width: 600px) {
-  .about-us {
-    height: 2700px;
-  }
-}
 @media screen and (max-width: 730px) {
   .about-us {
-    height: 4200px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .about-us {
-    height: 4900px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .about-us {
-    height: 4900px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .about-us {
-    height: 3800px;
+    height: 3300px;
   }
 }
 .about-us .about-us__container {
@@ -2973,7 +2953,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
   }
 }
 .about-us__principals {
@@ -2983,6 +2963,11 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 530px) {
+  .about-us__principals {
+    margin-top: 0px;
+  }
 }
 .about-us__principals .about-us__principals-title {
   width: 350px;
@@ -2994,7 +2979,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   color: #31357A;
   font-weight: 900;
   font-size: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 @media screen and (max-width: 500px) {
   .about-us__principals .about-us__principals-title {
@@ -3069,6 +3054,11 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   justify-content: center;
   align-items: center;
   margin-top: 150px;
+}
+@media screen and (max-width: 1000px) {
+  .about-us__team {
+    display: none;
+  }
 }
 .about-us__team .about-us__team-title {
   width: 800px;
@@ -3166,6 +3156,130 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   font-size: 20px;
 }
 .about-us__team .container .slider .slide .about-us__team-container .team-container p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.mobile-about-us__team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  margin-top: 150px;
+}
+@media screen and (max-width: 530px) {
+  .mobile-about-us__team {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mobile-about-us__team {
+    display: flex;
+  }
+}
+.mobile-about-us__team .about-us__team-title {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #31357A;
+  font-weight: 900;
+  text-align: center;
+  height: 40px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+  .mobile-about-us__team .about-us__team-title {
+    font-size: 30px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mobile-about-us__team .about-us__team-title {
+    height: 80px;
+  }
+}
+.mobile-about-us__team .about-us__team-title .about-us__team-title-line {
+  width: 100%;
+  height: 3px;
+  align-self: flex-start;
+  background: #31357A;
+}
+.mobile-about-us__team .container {
+  width: 100%;
+  overflow-x: hidden;
+}
+.mobile-about-us__team .container .slider {
+  width: 400%;
+  max-height: 600px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 5px;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+}
+.mobile-about-us__team .container .slider .slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-about-us__team .container .slider .slide .about-us__team-container {
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+.mobile-about-us__team .container .slider .slide .about-us__team-container .team-container {
+  width: 70%;
+  max-width: 500px;
+  min-height: 400px;
+  position: relative;
+  margin-top: 70px;
+  padding: 0% 7%;
+  padding-bottom: 5%;
+  padding-top: 50%;
+  background: #31357A;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1500px) {
+  .mobile-about-us__team .container .slider .slide .about-us__team-container .team-container {
+    padding-top: 15%;
+  }
+}
+.mobile-about-us__team .container .slider .slide .about-us__team-container .team-container img {
+  width: 250px;
+  position: absolute;
+  transform: translateY(-115%);
+}
+@media screen and (max-width: 1160px) {
+  .mobile-about-us__team .container .slider .slide .about-us__team-container .team-container img {
+    width: 170px;
+    transform: translateY(-120%);
+  }
+}
+.mobile-about-us__team .container .slider .slide .about-us__team-container .team-container h2 {
+  text-align: center;
+  color: #EF8E32;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.mobile-about-us__team .container .slider .slide .about-us__team-container .team-container h2 span {
+  color: white;
+  font-size: 20px;
+}
+.mobile-about-us__team .container .slider .slide .about-us__team-container .team-container p {
   font-size: 16px;
   text-align: justify;
 }
