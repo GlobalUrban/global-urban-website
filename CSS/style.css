@@ -2691,7 +2691,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
 }
 @media screen and (max-width: 730px) {
   .about-us {
-    height: 3300px;
+    height: 3500px;
   }
 }
 .about-us .about-us__container {
@@ -2966,7 +2966,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
 }
 @media screen and (max-width: 530px) {
   .about-us__principals {
-    margin-top: 0px;
+    margin-top: 50px;
   }
 }
 .about-us__principals .about-us__principals-title {
