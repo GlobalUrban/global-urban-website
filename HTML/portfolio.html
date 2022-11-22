@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- slider // -->
-    <link rel="stylesheet" href="../CSS/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../CSS/normalize.css" />
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Portfolio</title>
-  </head>
 
-  <body>
-    <!-- nav // ===================================== -->
-    <nav>
-      <a href="../index.html" class="logo">
-        <img class="logo-img1" src="../img/Logo_nav.png" alt="" />
-        <img class="logo-img2" src="../img/logo_dvbe.png" alt="" />
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- slider // -->
+  <link rel="stylesheet" href="../CSS/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../CSS/normalize.css" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Portfolio</title>
+</head>
 
-      <div class="burger">
-        <div class="line l1"></div>
-        <div class="line l2"></div>
-        <div class="line l3"></div>
-      </div>
+<body>
+  <!-- nav // ===================================== -->
+  <nav>
+    <a href="../index.html" class="logo">
+      <img class="logo-img1" src="../img/Logo_nav.png" alt="" />
+      <img class="logo-img2" src="../img/logo_dvbe.png" alt="" />
+    </a>
 
-      <ul class="nav-links">
-        <li>
-          <a href="./about-us.html">About Us</a>
-        </li>
-        <li><a href="./services.html">Services</a></li>
-        <li><a class="nav--selected" href="#">Portfolio</a></li>
-        <li><a href="./client-review.html">Client Review</a></li>
-        <li class="--border"><a href="">Contact Us</a></li>
-      </ul>
-    </nav>
+    <div class="burger">
+      <div class="line l1"></div>
+      <div class="line l2"></div>
+      <div class="line l3"></div>
+    </div>
 
-   <div class="portfolio">
+    <ul class="nav-links">
+      <li>
+        <a href="./about-us.html">About Us</a>
+      </li>
+      <li><a href="./services.html">Services</a></li>
+      <li><a class="nav--selected" href="#">Portfolio</a></li>
+      <li><a href="./client-review.html">Client Review</a></li>
+      <li class="--border"><a href="">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="portfolio">
 
     <!-- Title  -->
     <div class="portfolio-title">
@@ -46,33 +47,65 @@
     </div>
 
     <div class="portfolio-nav">
-      <div class="porfolio-nav__line portfolio-blue"></div>
+      <div class="porfolio-nav__line portfolio-blue"> |</div>
+
       <div class="porfolio-nav__links">
-        <button  class="portfolio-btn portfolio-focused" id="portfolio-focused">
+        <button class="portfolio-btn portfolio-focused" id="portfolio-focused">
           Public Outreach
         </button>
 
-        <button class="portfolio-btn" >
+        <button class="portfolio-btn">
           Graphic Design
         </button>
 
-        <button class="portfolio-btn" >
+        <button class="portfolio-btn">
           Public Outreach
         </button>
 
-        <button class="portfolio-btn" >
+        <button class="portfolio-btn">
           Public Outreach
         </button>
       </div>
-      <div class="porfolio-nav__line"></div>
+
+      <div class="porfolio-nav__line"> |</div>
     </div>
-   </div>
-    <!-- --------------------------------------------------------- -->
-    <script src="../JS/nav.js"></script>
-    <script src="../JS/portfolio-slider.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+
+    <div class="container">
+      <div class="slider" id="slider">
+        <div class="slide portfolio-slide">
+          <div class="portfolio-slide__title-container">
+            <h1>PUBLIC <br> OUTREACH</h1>
+
+            <div class="divider"></div>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quidem id necessitatibus, deserunt et
+              quod. Molestiae sit ab similique iusto quis iure inventore accusamus dolores.</p>
+
+
+          </div>
+        </div>
+
+        <div class="slide">
+          Slide 2
+        </div>
+
+        <div class="slide">
+          Slide 3
+        </div>
+
+        <div class="slide">
+          Slide 4
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------------------------------------------------------- -->
+  <script src="../JS/nav.js"></script>
+  <script src="../JS/portfolio-slider.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
