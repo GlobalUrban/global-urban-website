@@ -130,7 +130,42 @@
                 .portfolio-grid {
                     width: 100%;
                     height: 100vh;
+                    display: grid;
+                   grid: repeat(2, 50%) / repeat(2, 50%);
+
+                   .portfolio-grid__section {
+                    width: 100%;
+                    height: 100%;
+                    @include flex-center;
+                    font-size: $XXL;
+                    color: white;
+                    
+
+                   }
+
+                   .portfolio-grid__section-1 {
+                    grid-area: 1/1/2/2;
+                    background: $t1;
+
+                   }
+
+                   .portfolio-grid__section-2 {
+                    grid-area: 1/2/2/3;
+                    background: $t3;
+                   }
+
+                   .portfolio-grid__section-3 {
+                    grid-area: 2/1/3/2;
+                    background: $t4;
+
+                   }
+
+                   .portfolio-grid__section-4 {
+                    grid-area: 2/2/3/3;
                     background: $t2;
+                   }
+
+
                 }
             }
         }
