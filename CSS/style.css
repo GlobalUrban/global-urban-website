@@ -4022,9 +4022,11 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
 .portfolio .portfolio-nav {
   margin-top: 5vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .portfolio .portfolio-nav .porfolio-nav__line {
-  margin: 0 10px;
+  margin: 0 20px;
   height: 100%;
   width: 3px;
   background: #EF8E32;
@@ -4039,7 +4041,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
 }
 .portfolio .portfolio-nav .porfolio-nav__links button {
   cursor: pointer;
@@ -4050,6 +4052,7 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   color: #31357A;
   font-size: 20px;
   transition: all 0.2s;
+  text-align: start;
 }
 .portfolio .portfolio-nav .porfolio-nav__links button:hover {
   transform: translateY(-10%);
@@ -4086,7 +4089,13 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   justify-content: center;
   align-items: center;
 }
-.portfolio .container .slider .slide .portfolio-slide__title-container {
+.portfolio .container .slider .portfolio-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio .container .slider .portfolio-slide .portfolio-slide__title-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4094,17 +4103,22 @@ footer .footer__bottom .footer__bottom-right .footer__bottom-right-container .fo
   height: 150px;
   gap: 5%;
 }
-.portfolio .container .slider .slide .portfolio-slide__title-container h1 {
+.portfolio .container .slider .portfolio-slide .portfolio-slide__title-container h1 {
   color: #31357A;
 }
-.portfolio .container .slider .slide .portfolio-slide__title-container .divider {
+.portfolio .container .slider .portfolio-slide .portfolio-slide__title-container .divider {
   height: 70%;
   width: 15px;
   background: rgb(239, 142, 50);
   background: linear-gradient(90deg, rgb(239, 142, 50) 20%, rgba(245, 246, 247, 0) 86%);
 }
-.portfolio .container .slider .slide .portfolio-slide__title-container p {
+.portfolio .container .slider .portfolio-slide .portfolio-slide__title-container p {
   width: 50%;
+}
+.portfolio .container .slider .portfolio-slide .portfolio-grid {
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 0, 0, 0.589);
 }
 
 .client-review__title {
