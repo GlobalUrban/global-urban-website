@@ -76,8 +76,9 @@
     // Portfolio Slider //
     .container {
         width: 100%;
-        height: 50%;
+        // height: 50%;
         overflow-x: hidden;
+        overflow-y: hidden;
         margin-top: 10vh;
 
         .slider {
@@ -91,7 +92,7 @@
             align-items: center;
             transition: all 0.4s ease-in-out;
 
-            
+
             .slide {
                 width: 100%;
                 display: flex;
@@ -102,7 +103,7 @@
             // Portfolio Slide -------------------------- //
             .portfolio-slide {
                 @include --flex(column, center);
-                   
+
                 // Portfolio Title //
                 .portfolio-slide__title-container {
                     @include flex-center;
@@ -129,41 +130,63 @@
                 // Portfolio Grid //
                 .portfolio-grid {
                     width: 100%;
-                    height: 100vh;
+                    height: 120vh;
                     display: grid;
-                   grid: repeat(2, 50%) / repeat(2, 50%);
+                    grid: repeat(2, 50%) / repeat(2, 50%);
+                    gap: 10px;
 
-                   .portfolio-grid__section {
-                    width: 100%;
-                    height: 100%;
-                    @include flex-center;
-                    font-size: $XXL;
-                    color: white;
-                    
+                    // Portfolio General Section //
+                    .portfolio-grid__section {
+                        width: 100%;
+                        height: 100%;
+                        @include flex-center;
+                        -webkit-box-shadow: 13px 14px 11px -13px rgba(0, 0, 0, 0.49);
+                        -moz-box-shadow: 13px 14px 11px -13px rgba(0, 0, 0, 0.49);
+                        box-shadow: 13px 14px 11px -13px rgba(0, 0, 0, 0.49);
+                        border: solid black 1px;
+                    }
 
-                   }
+                    .portfolio-grid__section-1 {
+                        grid-area: 1/1/2/2;
+                        @include --flex(column, center);
 
-                   .portfolio-grid__section-1 {
-                    grid-area: 1/1/2/2;
-                    background: $t1;
+                        .img-container {
+                            @include cont-img(100%, 50%);
+                        }
 
-                   }
+                        .info {
+                            @include flex-between(row);
+                            width: 100%;
+                            height: 50%;
 
-                   .portfolio-grid__section-2 {
-                    grid-area: 1/2/2/3;
-                    background: $t3;
-                   }
+                            .info-bar {
+                                width: 15px;
+                                height: 40%;
+                                background: $color-orange;
+                            }
 
-                   .portfolio-grid__section-3 {
-                    grid-area: 2/1/3/2;
-                    background: $t4;
+                            p {
+                                width: 60%;
+                                margin-right: 3%;
+                            }
+                        }
+                    }
 
-                   }
+                    .portfolio-grid__section-2 {
+                        grid-area: 1/2/2/3;
+                        background: $t3;
+                    }
 
-                   .portfolio-grid__section-4 {
-                    grid-area: 2/2/3/3;
-                    background: $t2;
-                   }
+                    .portfolio-grid__section-3 {
+                        grid-area: 2/1/3/2;
+                        background: $t4;
+
+                    }
+
+                    .portfolio-grid__section-4 {
+                        grid-area: 2/2/3/3;
+                        background: $t2;
+                    }
 
 
                 }
