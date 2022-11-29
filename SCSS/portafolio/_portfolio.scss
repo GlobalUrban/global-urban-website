@@ -102,11 +102,6 @@
 
             // Portfolio Slide -------------------------- //
             .portfolio-slide {
-                a {
-                    text-decoration: none;
-                    color: black;
-                }
-
                 @include --flex(column, center);
 
                 // Portfolio Title //
@@ -149,7 +144,7 @@
                         height: 98%;
                         background: white;
                         @include flex-center;
-                        border: solid rgba(0, 0, 0, 0.252) 0.5px;
+                        // border: solid rgba(0, 0, 0, 0.252) 0.5px;
                         transition: all 0.2s ease-in-out;
 
                         p {
@@ -158,7 +153,6 @@
 
                         &:hover {
                             transform: translateY(-5%) scale(1.03);
-                            cursor: pointer;
                             -webkit-box-shadow: 13px 14px 11px -13px rgba(0, 0, 0, 0.49);
                             -moz-box-shadow: 13px 14px 11px -13px rgba(0, 0, 0, 0.49);
                             box-shadow: 13px 14px 11px -13px rgba(0, 0, 0, 0.49);
@@ -186,8 +180,26 @@
                             }
 
                             p {
-                                width: 40%;
+                                width: 50%;
                                 margin-right: 3%;
+                                text-align: start;
+                                text-align: justify;
+
+                                span {
+                                    font-size: $S;
+                                    font-weight: bold;
+                                    color: $color-blue;
+                                }
+
+                                b {
+                                    margin-top: 10px;
+                                }
+
+                                a {
+                                    color: $color-blue;
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                }
 
                                 @media screen and(max-width: 960px) {
                                     width: 60%;
@@ -219,6 +231,9 @@
 
                             p {
                                 text-align: start;
+                                text-align: justify;
+                                height: 50%;
+                                margin: 3% 15%;
 
                                 span {
                                     font-size: $S;
@@ -230,12 +245,16 @@
                                     margin-top: 10px;
                                 }
 
-                                text-align: justify;
-                                height: 40%;
-                                margin: 3% 15%;
+                                a {
+                                    color: #87C3CA;
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                }
 
-                                @media screen and(max-width: 960px) {
-                                    height: 50%;
+
+
+                                @media screen and(max-width: 1200px) {
+                                    height: 70%;
                                 }
                             }
                         }
@@ -262,9 +281,26 @@
                             }
 
                             p {
+                                height: 50%;
+                                margin: 3% 15%; 
+                                text-align: start;
+                                text-align: justify;
 
-                                height: 40%;
-                                margin: 3% 15%;
+                                span {
+                                    font-size: $S;
+                                    font-weight: bold;
+                                    color: $color-orange;
+                                }
+
+                                b {
+                                    margin-top: 10px;
+                                }
+
+                                a {
+                                    color: $color-orange;
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                }
 
                                 @media screen and(max-width: 960px) {
                                     height: 50%;
@@ -276,8 +312,6 @@
 
                     .portfolio-grid__section-4 {
                         grid-area: 2/2/3/3;
-
-
                         @include --flex(column, center);
 
                         .img-container {
@@ -289,7 +323,6 @@
                             width: 100%;
                             height: 40%;
 
-
                             .info-bar {
                                 width: 15px;
                                 height: 40%;
@@ -298,9 +331,27 @@
                             }
 
                             p {
-                                width: 40%;
+                                width: 50%;
                                 margin-left: 3%;
                                 order: 1;
+                                text-align: start;
+                                text-align: justify;
+
+                                span {
+                                    font-size: $S;
+                                    font-weight: bold;
+                                    color: rgb(158, 158, 158);
+                                }
+
+                                b {
+                                    margin-top: 10px;
+                                }
+
+                                a {
+                                    color: rgb(158, 158, 158);
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                }
 
                                 @media screen and(max-width: 960px) {
                                     width: 60%;
