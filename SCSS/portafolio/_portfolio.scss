@@ -113,6 +113,10 @@
 
                     h1 {
                         color: $color-blue;
+
+                        @media screen and(max-width: 960px) {
+                            font-size: $M;
+                        }
                     }
 
                     .divider {
@@ -126,6 +130,10 @@
                         color: $color-blue;
                         width: 50%;
                         font-size: $S;
+
+                        @media screen and(max-width: 960px) {
+                            font-size: $XS;
+                        }
                     }
                 }
 
@@ -282,7 +290,7 @@
 
                             p {
                                 height: 50%;
-                                margin: 3% 15%; 
+                                margin: 3% 15%;
                                 text-align: start;
                                 text-align: justify;
 
@@ -366,6 +374,8 @@
                 // Media Querys -------------------------------------- //
                 @media screen and(max-width: 960px) {
 
+                    .portfolio-slide {}
+
                     // Portfolio Grid //
                     .portfolio-grid {
                         width: 100%;
@@ -375,19 +385,71 @@
                         grid: repeat(2, 50%) / repeat(2, 50%);
                         gap: 0.5%;
 
+
+
                         // Portfolio General Section //
                         .portfolio-grid__section {
                             width: 98%;
                             height: 98%;
                             background: white;
                             @include flex-center;
-                            border: solid black 1px;
-                            transition: all 0.2s ease-in-out;
+                            -webkit-box-shadow: 13px 14px 11px -13px rgba(0, 0, 0, 0.49);
+                            -moz-box-shadow: 13px 14px 11px -13px rgba(0, 0, 0, 0.49);
+                            box-shadow: 13px 14px 11px -13px rgba(0, 0, 0, 0.49);
+
 
                             p {
                                 text-align: justify;
                             }
                         }
+
+                        // Mobile Portfolio Section //
+                        .portfolio-grid__section-mobile {
+                            @include --flex(column, center);
+
+                            .img-container {
+                                @include cont-img(100%, 50%);
+                                order: 1
+                            }
+
+                            .info {
+                                @include flex-between(column);
+                                width: 100%;
+                                height: 50%;
+                                margin-top: 20px;
+                                padding: 0% 2%;
+                                order: 2;
+
+
+                                .info-bar {
+                                    width: 50%;
+                                    height: 10px;
+                                    order: 2;
+                                }
+
+                                p {
+                                    order: 1;
+                                    width: 90%;
+                                    text-align: start;
+                                    text-align: justify;
+
+                                    span {
+                                        font-size: $S;
+                                        font-weight: bold;
+                                    }
+
+                                    b {
+                                        margin-top: 10px;
+                                    }
+
+                                    a {
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+
                     }
                 }
             }
